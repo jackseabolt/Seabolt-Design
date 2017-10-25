@@ -19,7 +19,8 @@ body {
     position: fixed; 
     top: 50px; 
     right: 50px;
-    display: none;  
+    display: none; 
+    cursor: pointer !important; 
 }
 
 .hamburger-stripe {
@@ -106,7 +107,7 @@ button {
     font-family: 'Amatic SC', cursive;
     font-size: 27px; 
     transition: .3s;
-    cursor: pointer; 
+    cursor: pointer !important; 
 }
 
 .nav-link-mobile {
@@ -116,7 +117,7 @@ button {
     font-family: 'Amatic SC', cursive;
     font-size: 27px; 
     transition: .3s;
-    cursor: pointer; 
+    cursor: pointer !important; 
 }
 
 .nav-link:hover {

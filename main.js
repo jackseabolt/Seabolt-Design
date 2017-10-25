@@ -1,19 +1,13 @@
 
-    function main() {
-        $('#banner').animate({opacity: 1}, 2000);
-    }
-
-    $(main)
 
     function hideMobileNav() {
         $('#nav-mobile').slideUp(); 
         $('.hamburger-container').show(); 
-        console.log("IT RAN") 
     } 
 
     function showMobileNav() {
         $('#nav-mobile').slideToggle(); 
-        $('.hamburger-container').hide();  
+        $('.hamburger-container').hide(); 
     }
 
     function dropMobile() {
@@ -58,5 +52,10 @@
         div.style.top = ypos * 0.5 + 'px'; 
     }
     
-    window.addEventListener('scroll', parallax); 
 
+    function main() {
+        $('#banner').animate({opacity: 1}, 2000);
+        window.addEventListener('scroll', parallax); 
+    }
+
+    $(main)
