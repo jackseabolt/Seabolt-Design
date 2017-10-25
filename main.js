@@ -1,7 +1,9 @@
 
+    function main() {
+        $('#banner').animate({opacity: 1}, 2000); 
+    }
 
-
-
+    $(main)
 
     function dropMobile() {
         console.log("IT RAN"); 

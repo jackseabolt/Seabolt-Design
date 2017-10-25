@@ -1,5 +1,5 @@
 body {
-    background-color: #232427; 
+    background-color: black; 
     margin: 0px; 
     padding: 0px; 
 }
@@ -23,6 +23,7 @@ body {
     z-index: -5; 
     top: 0; 
     text-align: center; 
+    opacity: 0; 
 }
 
 .input {
@@ -220,12 +221,6 @@ footer {
     justify-content: space-between;  
 }
 
-.portoflio-item-large {
-    height: 300px; 
-    width: 60%; 
-    margin-right: 20px; 
-}
-
 #portfolio-albumreview {
     background-image: url('./images/albumreview.png'); 
     -webkit-background-size: cover;
@@ -263,6 +258,12 @@ footer {
     background-size: cover;
 }
 
+.portoflio-item-large {
+    height: 300px; 
+    width: 60%; 
+    margin-right: 20px; 
+}
+
 .portoflio-item-large-nospace {
     height: 300px; 
     width: 60%; 
@@ -292,6 +293,11 @@ footer {
     .container-noflex {
         width: 80%; 
     }
+    .container-portfolio {
+        width: 100%; 
+        margin: 20px auto;
+        display: block;  
+    }
     #title {
         font-size: 60px; 
     }
@@ -306,6 +312,26 @@ footer {
         margin-top: 50px;
         margin-left: auto; 
         margin-right: auto;  
+    }
+    .portoflio-item-large {
+        height: 400px; 
+        width: 100%; 
+        margin-bottom: 50px; 
+    }
+    .portoflio-item-large-nospace {
+        height: 400px; 
+        width: 100%;  
+        margin-bottom: 50px; 
+    }
+    .portfolio-item {
+        height: 400px; 
+        width: 100%; 
+        margin-bottom: 50px; 
+    }
+    .portfolio-item-spacing {
+        height: 400px; 
+        width: 100%; 
+        margin-bottom: 50px; 
     }
     .logo {
         width: 50px; 
@@ -331,5 +357,17 @@ footer {
         font-size: 50px; 
         margin-left: 20px; 
         margin-right: 20px; 
+    }
+    .portoflio-item-large {
+        height: 300px; 
+    }
+    .portoflio-item-large-nospace {
+        height: 300px; 
+    }
+    .portfolio-item {
+        height: 300px; 
+    }
+    .portfolio-item-spacing {
+        height: 300px; 
     }
 }
