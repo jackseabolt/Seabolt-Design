@@ -198,7 +198,43 @@ footer {
     height: 300px; 
     width: 60%; 
     margin-right: 20px; 
-    background-color: grey; 
+}
+
+#portfolio-albumreview {
+    background-image: url('./images/albumreview.png'); 
+    -webkit-background-size: cover;
+}
+
+#portfolio-buzzkill {
+    background: url('./images/buzzkill.png') no-repeat center; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+#portfolio-musi {
+    background: url('./images/musi.png') no-repeat center; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+#portfolio-stormchaser {
+    background: url('./images/stormchaser.png') no-repeat center; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+#portfolio-oaklandyoga {
+    background: url('./images/oaklandyoga.png') no-repeat center; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
 }
 
 .portoflio-item-large-nospace {
