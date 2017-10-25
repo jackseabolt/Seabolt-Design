@@ -13,6 +13,18 @@ body {
     font-family: 'Limelight', cursive;
 }
 
+.hamburger-container {
+    width: 50px; 
+    height: 60px; 
+}
+
+.hamburger-stripe {
+    height: 10px; 
+    width: 100%; 
+    background-color: white; 
+    margin-bottom: 10px; 
+}
+
 #banner {
 	background-image: url('./images/background.jpeg');
     -webkit-background-size: cover;
@@ -63,6 +75,10 @@ button {
     margin-top: 20px; 
 }
 
+.verticle-align {
+    align-items: center; 
+}
+
 .nav-link {
     flex: 1; 
     text-align: center; 
@@ -70,7 +86,8 @@ button {
     text-decoration: none; 
     font-family: 'Amatic SC', cursive;
     font-size: 27px; 
-    transition: .3s; 
+    transition: .3s;
+    cursor: pointer; 
 }
 
 .nav-link:hover {
@@ -79,8 +96,7 @@ button {
 
 .profile-photo {
     width: 200px; 
-    height: 200px; 
-    margin-top: 20px; 
+    height: 200px;  
     background-color: grey; 
     border-radius: 50%; 
 }
@@ -284,8 +300,24 @@ footer {
     /* width: calc(100%/3 - 20px);   */
     background-color: grey; 
 }
+@media screen and (min-width: 1500px) {
+    .profile-photo {
+        width: 250px; 
+        height: 250px;  
+        margin-left: 50px;  
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .intro-right {
+        padding-left: 50px; 
+    }
+}
 
 @media screen and (max-width: 800px) {
+    .intro-right {
+        padding-left: 0px; 
+    }
     .container {
         width: 80%; 
         display: block; 
@@ -342,6 +374,9 @@ footer {
         margin-right: auto; 
         margin-bottom: 100px; 
     }
+    .nav-link {
+        display: none; 
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -369,5 +404,8 @@ footer {
     }
     .portfolio-item-spacing {
         height: 300px; 
+    }
+    #phone-image {
+        width: 80%;   
     }
 }
