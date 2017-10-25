@@ -14,15 +14,19 @@ body {
 }
 
 .hamburger-container {
-    width: 50px; 
+    width: 35px; 
     height: 60px; 
+    position: fixed; 
+    top: 50px; 
+    right: 50px;
+    display: none;  
 }
 
 .hamburger-stripe {
-    height: 10px; 
+    height: 5px; 
     width: 100%; 
     background-color: white; 
-    margin-bottom: 10px; 
+    margin-bottom: 5px; 
 }
 
 #banner {
@@ -52,7 +56,22 @@ textarea {
     height: 150px; 
 }
 
-nav {
+.hide {
+    display: none; 
+}
+
+#nav-mobile { 
+    z-index: 5; 
+    display: none; 
+    position: fixed; 
+    top: 0px;
+    left: 0px; 
+    background-color: black;  
+    width: 100%; 
+    padding: 50px; 
+}
+
+#nav {
     position: fixed; 
     top: 0px; 
     display: flex; 
@@ -82,6 +101,16 @@ button {
 .nav-link {
     flex: 1; 
     text-align: center; 
+    color: white; 
+    text-decoration: none; 
+    font-family: 'Amatic SC', cursive;
+    font-size: 27px; 
+    transition: .3s;
+    cursor: pointer; 
+}
+
+.nav-link-mobile {
+    text-align: left; 
     color: white; 
     text-decoration: none; 
     font-family: 'Amatic SC', cursive;
@@ -376,6 +405,9 @@ footer {
     }
     .nav-link {
         display: none; 
+    }
+    .hamburger-container {
+        display: block;  
     }
 }
 

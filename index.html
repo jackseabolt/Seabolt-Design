@@ -8,11 +8,24 @@
         <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Limelight|Oswald|Pacifico|Roboto+Condensed|Fjalla+One|Limelight" rel="stylesheet">       
     </head>
     <body>
-        <!-- <div class="hamburger-container -->
+        <nav id="nav-mobile">
+            <p onclick="dropMobileMobile()" id="link-mobile" class="nav-link-mobile">MOBILE</p>
+            <p onclick="dropPortfolioMobile()" class="nav-link-mobile">PORTFOLIO</p>
+            <p onclick="dropAboutMobile()" class="nav-link-mobile">ABOUT ME</p>
+            <p onclick="dropContactMobile()" class="nav-link-mobile">CONTACT</p>
+        </nav>
         <div id="banner">
         </div>
+        <div onclick="showMobileNav()" class="hamburger-container">
+                <div class="hamburger-stripe">
+                </div>
+                <div class="hamburger-stripe">
+                </div>
+                <div class="hamburger-stripe">
+                </div>                        
+            </div>
         <h1 id="title">Seabolt Design.</h1>
-        <nav> 
+        <nav id="nav"> 
             <p onclick="dropMobile()" id="link-mobile" class="nav-link">MOBILE</p>
             <p onclick="dropPortfolio()" class="nav-link">PORTFOLIO</p>
             <p onclick="dropAbout()" class="nav-link">ABOUT ME</p>

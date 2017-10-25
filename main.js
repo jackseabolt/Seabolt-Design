@@ -1,28 +1,55 @@
 
     function main() {
-        $('#banner').animate({opacity: 1}, 2000); 
+        $('#banner').animate({opacity: 1}, 2000);
     }
 
     $(main)
 
+    function hideMobileNav() {
+        $('#nav-mobile').slideUp(); 
+        $('.hamburger-container').show(); 
+        console.log("IT RAN") 
+    } 
+
+    function showMobileNav() {
+        $('#nav-mobile').slideToggle(); 
+        $('.hamburger-container').hide();  
+    }
+
     function dropMobile() {
-        console.log("IT RAN"); 
         $('html, body').animate({ scrollTop: $("#mobile-first").offset().top}, 'slow');
     }
 
+    function dropMobileMobile() {
+        $('html, body').animate({ scrollTop: $("#mobile-first").offset().top}, 'slow');
+        hideMobileNav();  
+    }
+
     function dropPortfolio() {
-        console.log("IT RAN"); 
         $('html, body').animate({ scrollTop: $("#portfolio").offset().top}, 'slow');
     }
 
-    function dropAbout() {
-        console.log("IT RAN"); 
+    function dropPortfolioMobile() {
+        $('html, body').animate({ scrollTop: $("#portfolio").offset().top}, 'slow');
+        hideMobileNav(); 
+    }
+
+    function dropAbout() { 
         $('html, body').animate({ scrollTop: $("#about-me").offset().top}, 'slow');
     }
 
+    function dropAboutMobile() { 
+        $('html, body').animate({ scrollTop: $("#about-me").offset().top}, 'slow');
+        hideMobileNav(); 
+    }
+
     function dropContact() {
-        console.log("IT RAN"); 
         $('html, body').animate({ scrollTop: $("#contact").offset().top}, 'slow');
+    }
+
+    function dropContactMobile() {
+        $('html, body').animate({ scrollTop: $("#contact").offset().top}, 'slow');
+        hideMobileNav(); 
     }
 
     function parallax(){
@@ -32,5 +59,4 @@
     }
     
     window.addEventListener('scroll', parallax); 
-
 
