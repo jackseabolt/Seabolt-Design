@@ -17,8 +17,8 @@ body {
     width: 35px; 
     height: 60px; 
     position: fixed; 
-    top: 50px; 
-    right: 50px;
+    top: 35px; 
+    right: 35px;
     display: none; 
     cursor: pointer !important; 
 }
