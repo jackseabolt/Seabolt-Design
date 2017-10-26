@@ -464,4 +464,7 @@ footer {
         text-align: center; 
         font-family: 'Pacifico', cursive;
     }
+    #banner {
+        background-image: url('./images/background-mobile.jpg'); 
+    }
 }
