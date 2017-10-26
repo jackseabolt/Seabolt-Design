@@ -86,13 +86,19 @@ textarea {
 
 button {
     padding: 14px 30px; 
-    background-color: rgb(77, 79, 105); 
+    background-color: #2C3249; 
     color: white; 
     font-size: 16px; 
     border-radius: 5px; 
     float: right; 
     border: 0px; 
     margin-top: 20px; 
+    transition: 0.3s; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #262B3E; 
 }
 
 .verticle-align {
