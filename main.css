@@ -447,6 +447,9 @@ footer {
     .center {
         text-align: center; 
     }
+    #title {
+        top: -620px; 
+    }
     #p-hello {
         color: white; 
         font-family: sans-serif; 
