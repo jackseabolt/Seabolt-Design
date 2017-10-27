@@ -1,12 +1,15 @@
 
+    let navIsOpen = false; 
 
     function hideMobileNav() {
+        navIsOpen = false; 
         $('#nav-mobile').slideUp(); 
         $('.hamburger-container').show(); 
     } 
 
     function showMobileNav() {
-        $('#nav-mobile').slideToggle(); 
+        navIsOpen = true; 
+        $('#nav-mobile').slideDown(); 
         $('.hamburger-container').hide(); 
     }
 
@@ -52,10 +55,15 @@
         div.style.top = ypos * 0.5 + 'px'; 
     }
     
-
     function main() {
         $('#banner').animate({opacity: 1}, 2000);
         window.addEventListener('scroll', parallax); 
+        $('body').on('click', function(event) {
+            if(navIsOpen && event.target.id !== 'hamburger') {
+                hideMobileNav(); 
+            }
+        })
+        
     }
 
     $(main)
