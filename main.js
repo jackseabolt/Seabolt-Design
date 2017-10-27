@@ -62,8 +62,7 @@
             if(navIsOpen && event.target.id !== 'hamburger') {
                 hideMobileNav(); 
             }
-        })
-        
+        }); 
     }
 
     $(main)
