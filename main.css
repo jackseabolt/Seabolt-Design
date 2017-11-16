@@ -134,6 +134,11 @@ button:hover {
 }
 
 .profile-photo {
+    background-image: url('./images/profile-picture.jpg'); 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
     width: 200px; 
     height: 200px;  
     background-color: grey; 
