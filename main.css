@@ -269,12 +269,19 @@ footer {
     height: 70px; 
 }
 
+
+
+
+/*******PORTFOLIO STYLES**********/
+
 .container-portfolio {
     width: 100%; 
     margin: 20px auto;
     display: flex; 
     justify-content: space-between;  
 }
+
+/* portfolio - individualized information */
 
 #portfolio-albumreview {
     background-image: url('./images/albumreview.png'); 
@@ -305,40 +312,56 @@ footer {
     background-size: cover;
 }
 
-#portfolio-oaklandyoga {
-    background: url('./images/oaklandyoga.png') no-repeat center; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-    background-size: cover;
-}
+
+/* portfolio div styles (inside links) */ 
 
 .portoflio-item-large {
     height: 300px; 
-    width: 60%; 
-    margin-right: 20px; 
+    width: 100%; 
 }
 
 .portoflio-item-large-nospace {
     height: 300px; 
-    width: 60%; 
+    width: 100%; 
     background-color: grey; 
 }
 
 .portfolio-item {
     height: 300px; 
-    width: 40%; 
-    /* width: calc(100%/3 - 20px);   */
+    width: 100%; 
     background-color: grey; 
 }
 
 .portfolio-item-spacing {
     height: 300px; 
-    width: 40%; 
-    margin-right: 20px; 
-    /* width: calc(100%/3 - 20px);   */
+    width: 100%; 
     background-color: grey; 
 }
+
+
+
+/* link styles - flexbox */
+
+.link-portoflio-item-large {
+    width: 60%; 
+    margin-right: 20px; 
+}
+
+.link-portoflio-item-large-nospace {
+    width: 60%; 
+}
+
+.link-portfolio-item {
+    width: 40%; 
+}
+
+.link-portfolio-item-spacing {
+    width: 40%; 
+    margin-right: 20px; 
+}
+
+
+
 @media screen and (min-width: 1500px) {
     .profile-photo {
         width: 250px; 
