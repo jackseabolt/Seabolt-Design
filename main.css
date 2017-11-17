@@ -8,7 +8,10 @@ html, body {
 }
 
 
+/*******PORTFOLIO STYLES**********/
 
+
+/* title section - title styles */
 
 #title {
     margin: 0px auto; 
@@ -19,7 +22,6 @@ html, body {
     align-items: center;
     flex: 1; 
 }
-
 
 #title_container {
     height: 100%;
@@ -32,9 +34,7 @@ html, body {
 }
 
 
-
-
-
+/* title section - hamburger styles */
 
 .hamburger-container {
     width: 35px; 
@@ -44,6 +44,7 @@ html, body {
     right: 35px;
     display: none; 
     cursor: pointer !important; 
+    z-index: 10; 
 }
 
 .hamburger-stripe {
@@ -52,6 +53,9 @@ html, body {
     background-color: white; 
     margin-bottom: 5px; 
 }
+
+
+/* title section - banner styles */
 
 #banner {
 	background-image: url('./images/background.jpeg');
@@ -66,23 +70,7 @@ html, body {
     opacity: 0; 
 }
 
-.input {
-    width:  calc(100% - 24px);  /* width: calc(100%/3 - 20px);   */
-    padding: 12px 12px; 
-    font-size: 16px; 
-    border: 1px solid gray; 
-    border-radius: 5px; 
-    display: block; 
-    margin-bottom: 20px; 
-}
-
-textarea {
-    height: 150px; 
-}
-
-.hide {
-    display: none; 
-}
+/* title section - nav styles */
 
 #nav-mobile { 
     z-index: 5; 
@@ -105,27 +93,6 @@ textarea {
     left: 50%;
     transform: translateX(-50%);
     padding-top: 30px; 
-}
-
-button {
-    padding: 14px 30px; 
-    background-color: #2C3249; 
-    color: white; 
-    font-size: 16px; 
-    border-radius: 5px; 
-    float: right; 
-    border: 0px; 
-    margin-top: 20px; 
-    transition: 0.3s; 
-    cursor: pointer; 
-}
-
-button:hover {
-    background-color: #262B3E; 
-}
-
-.verticle-align {
-    align-items: center; 
 }
 
 .nav-link {
@@ -154,6 +121,48 @@ button:hover {
 
 .nav-link:hover {
     color: grey; 
+}
+
+
+
+
+.input {
+    width:  calc(100% - 24px);  /* width: calc(100%/3 - 20px);   */
+    padding: 12px 12px; 
+    font-size: 16px; 
+    border: 1px solid gray; 
+    border-radius: 5px; 
+    display: block; 
+    margin-bottom: 20px; 
+}
+
+textarea {
+    height: 150px; 
+}
+
+.hide {
+    display: none; 
+}
+
+button {
+    padding: 14px 30px; 
+    background-color: #2C3249; 
+    color: white; 
+    font-size: 16px; 
+    border-radius: 5px; 
+    float: right; 
+    border: 0px; 
+    margin-top: 20px; 
+    transition: 0.3s; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #262B3E; 
+}
+
+.verticle-align {
+    align-items: center; 
 }
 
 .profile-photo {
