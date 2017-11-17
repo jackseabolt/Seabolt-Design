@@ -3,15 +3,38 @@ body {
     margin: 0px; 
     padding: 0px; 
 }
+html, body {
+    height: 100%; 
+}
+
+
+
 
 #title {
-    position: relative; 
     margin: 0px auto; 
     text-align: center; 
     top: -580px; 
     font-size: 90px; 
     font-family: 'Anton', sans-serif;
+    align-items: center;
+    flex: 1; 
 }
+
+
+#title_container {
+    height: 100%;
+    width: 100%; 
+    display: flex; 
+    background-color: none; 
+    position: absolute; 
+    top: 0px; 
+    align-items: center; 
+}
+
+
+
+
+
 
 .hamburger-container {
     width: 35px; 
