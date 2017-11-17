@@ -54,6 +54,7 @@
         ypos = window.pageYOffset; 
         div.style.top = ypos * 0.5 + 'px'; 
     }
+
     
     function main() {
         $('#banner').animate({opacity: 1}, 2000);
