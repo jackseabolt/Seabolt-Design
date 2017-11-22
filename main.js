@@ -80,9 +80,6 @@
                 alert("Thank you! I will reply to your message as soon as I am able.")
                 return res.json()
             })
-            .catch(err => {
-                alert("There was a problem")
-            })
         }); 
     }
 
