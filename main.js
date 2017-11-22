@@ -81,6 +81,9 @@
                 return res.json()
             })
         }); 
+        $('#name').val() = ''; 
+        $('#email').val() = ''; 
+        $('#message').val() = ''; 
     }
 
 
