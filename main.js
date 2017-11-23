@@ -78,7 +78,6 @@
 
     function handleForm() {
         $('#js-contact-form').on('submit', event => {
-            console.log("IT FIRED")
             event.preventDefault(); 
             return fetch('https://seabolt-design-back.herokuapp.com/contact', {
                 method: 'POST', 
@@ -93,15 +92,18 @@
             })
             .then( res => {
                 if(!res.ok) {
+                    $('#name').val('') 
+                    $('#email').val('') 
+                    $('#message').val('')
                     return Promise.reject(res.statusText)
                 }
+                $('#name').val('') 
+                $('#email').val('') 
+                $('#message').val('')
                 alert("Thank you! I will reply to your message as soon as I am able.")
                 return res.json()
             })
-        }); 
-        $('#name').val() = ''; 
-        $('#email').val() = ''; 
-        $('#message').val() = ''; 
+        });  
     }
 
 
