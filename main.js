@@ -62,7 +62,6 @@
         let ypos = window.pageYOffset;
         let distanceTop = $('#mobile-first').offset().top - 100; 
         let distanceBottom = distanceTop + 712; 
-        console.log(distanceTop); 
         if(ypos > distanceTop && ypos < distanceBottom) {
             $('.nav-link').css('color', 'black')
         }
