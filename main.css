@@ -165,7 +165,7 @@ button:hover {
     align-items: center; 
 }
 
-.profile-photo {
+#profile-photo {
     background-image: url('./images/profile-picture.jpg'); 
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
@@ -181,6 +181,12 @@ button:hover {
     width: 250px;
     margin-left: 40px; 
 }
+
+
+
+
+
+/*******TEXT STYLES**********/
 
 h1 {
     color: white; 
@@ -224,6 +230,11 @@ h2 {
 .white {
     color: white; 
 }
+
+
+
+
+/*******SECTION STYLES**********/
 
 footer {
     width: 100%; 
@@ -272,6 +283,10 @@ footer {
     display: flex; 
 }
 
+
+
+/*******SUBSECTION STYLES**********/
+
 .project1-left {
     flex: 1; 
 }
@@ -280,6 +295,10 @@ footer {
     flex: 1; 
     text-align: center; 
 }
+
+
+
+/*******CONTAINER STYLES**********/
 
 .container {
     width: 70%; 
@@ -400,7 +419,7 @@ footer {
 
 
 @media screen and (min-width: 1500px) {
-    .profile-photo {
+    #profile-photo {
         width: 250px; 
         height: 250px;  
         margin-left: 50px;  
@@ -468,7 +487,7 @@ footer {
         width: 50px; 
         height: 50px; 
     }
-    .profile-photo {
+    #profile-photo {
         margin-left: auto; 
         margin-right: auto; 
         margin-bottom: 100px; 
