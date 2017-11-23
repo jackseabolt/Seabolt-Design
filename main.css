@@ -326,7 +326,7 @@ footer {
 }
 
 #portfolio-buzzkill {
-    background: url('./images/buzzkill.png') no-repeat center; 
+    background: url('./images/buzzkill.png') no-repeat center top; 
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
