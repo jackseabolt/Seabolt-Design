@@ -55,6 +55,25 @@
         div.style.top = ypos * 0.5 + 'px'; 
     }
 
+
+    // CODE FOR NAV CHANGES
+
+    function colorChange() {
+        let ypos = window.pageYOffset;
+        let distanceTop = $('#mobile-first').offset().top - 100; 
+        let distanceBottom = distanceTop + 712; 
+        console.log(distanceTop); 
+        if(ypos > distanceTop && ypos < distanceBottom) {
+            $('.nav-link').css('color', 'black')
+        }
+        else if (ypos < distanceTop) {
+            $('.nav-link').css('color', 'white')
+        }
+        else if (ypos > distanceBottom) {
+            $('.nav-link').css('color', 'white')
+        }
+    }
+
     
     // FORM CODE
 
@@ -89,6 +108,7 @@
 
     function main() {
         $('#banner').animate({opacity: 1}, 2000);
+        window.addEventListener('scroll', colorChange); 
         window.addEventListener('scroll', parallax); 
         handleForm(); 
         $('body').on('click', function(event) {
