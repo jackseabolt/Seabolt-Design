@@ -60,7 +60,7 @@
 
     function colorChange() {
         let ypos = window.pageYOffset;
-        let distanceTop = $('#mobile-first').offset().top - 100; 
+        let distanceTop = $('#mobile-first').offset().top - 90; 
         let distanceBottom = distanceTop + 712; 
         if(ypos > distanceTop && ypos < distanceBottom) {
             $('.nav-link').css('color', 'black')
