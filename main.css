@@ -60,7 +60,7 @@ html, body {
 #banner {
 	background-image: url('./images/background.jpeg');
     -webkit-background-size: cover;
-    height: 800px;  
+    height: 120%;  
 	margin-top: none;
     padding-top: none;
     position:relative; 
