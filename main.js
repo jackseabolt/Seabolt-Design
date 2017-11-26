@@ -61,7 +61,8 @@
     function colorChange() {
         let ypos = window.pageYOffset;
         let distanceTop = $('#mobile-first').offset().top - 90; 
-        let distanceBottom = distanceTop + 712; 
+        let distanceBottom = distanceTop + 712;
+        let mobileDistanceBottom = distanceTop + 1240; 
         if(ypos > distanceTop && ypos < distanceBottom) {
             $('.nav-link').css('color', 'black')
         }
@@ -70,6 +71,17 @@
         }
         else if (ypos > distanceBottom) {
             $('.nav-link').css('color', 'white')
+        }
+
+        // FOR HAMBURGER
+        if(ypos > distanceTop && ypos < mobileDistanceBottom) {
+            $('.hamburger-stripe').css('backgroundColor', 'black')
+        }
+        else if (ypos < distanceTop) {
+            $('.hamburger-stripe').css('backgroundColor', 'white')
+        }
+        else if (ypos > mobileDistanceBottom) {
+            $('.hamburger-stripe').css('backgroundColor', 'white')
         }
     }
 
