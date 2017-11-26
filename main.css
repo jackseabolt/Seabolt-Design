@@ -368,6 +368,23 @@ footer {
     background-size: cover;
 }
 
+#portfolio-ghostbusters {
+    background: url('./images/ghostbusters.png') no-repeat center top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+#portfolio-solarsystemguide {
+    background: url('./images/solarsystemguide.png') no-repeat center top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+
 
 /* portfolio div styles (inside links) */ 
 
