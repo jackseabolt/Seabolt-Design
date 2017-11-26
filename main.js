@@ -55,6 +55,17 @@
         div.style.top = ypos * 0.5 + 'px'; 
     }
 
+    // MAKES MOBILE FIRST TEXT APPEAR 
+
+    function textFadeIn(){
+        ypos = window.pageYOffset;
+        console.log(ypos)
+        let distanceTop = 900
+        if(ypos > distanceTop){
+            $('.project1-left').animate({opacity: '1.0'}, 2000); 
+        } 
+    }
+
 
     // CODE FOR NAV CHANGES
 
@@ -123,6 +134,8 @@
         $('#banner').animate({opacity: 1}, 2000);
         window.addEventListener('scroll', colorChange); 
         window.addEventListener('scroll', parallax); 
+        window.addEventListener('scroll', textFadeIn); 
+       
         handleForm(); 
         $('body').on('click', function(event) {
             if(navIsOpen && event.target.id !== 'hamburger') {
