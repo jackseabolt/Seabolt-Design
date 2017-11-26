@@ -103,7 +103,8 @@ html, body {
     font-family: 'Amatic SC', cursive;
     font-size: 27px; 
     transition: .3s;
-    cursor: pointer !important; 
+    cursor: pointer; 
+    z-index: 100; 
 }
 
 .nav-link-mobile {
@@ -120,7 +121,7 @@ html, body {
 }
 
 .nav-link:hover {
-    color: grey; 
+    color: rgb(219, 219, 219); 
 }
 
 
