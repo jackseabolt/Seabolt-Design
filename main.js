@@ -55,6 +55,17 @@
         div.style.top = ypos * 0.5 + 'px'; 
     }
 
+    // MAKES HELLO TEXT APPEAR
+
+    function helloFadeIn(){
+        ypos = window.pageYOffset;
+        console.log(ypos)
+        let distanceTop = 300
+        if(ypos > distanceTop){
+            $('.intro-right').animate({opacity: '1.0'}, 1000); 
+        } 
+    }
+
     // MAKES MOBILE FIRST TEXT APPEAR 
 
     function textFadeIn(){
@@ -65,7 +76,6 @@
             $('.project1-left').animate({opacity: '1.0'}, 1000); 
         } 
     }
-
 
     // CODE FOR NAV CHANGES
 
@@ -135,6 +145,7 @@
         window.addEventListener('scroll', colorChange); 
         window.addEventListener('scroll', parallax); 
         window.addEventListener('scroll', textFadeIn); 
+        window.addEventListener('scroll', helloFadeIn); 
        
         handleForm(); 
         $('body').on('click', function(event) {

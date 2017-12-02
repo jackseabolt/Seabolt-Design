@@ -217,6 +217,10 @@ h1 {
     flex: 2; 
 }
 
+#intro-right {
+    opacity: 0; 
+}
+
 h2 {
     font-family: 'Oswald', sans-serif;
     font-size: 40px; 
