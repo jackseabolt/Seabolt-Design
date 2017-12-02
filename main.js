@@ -62,7 +62,7 @@
         console.log(ypos)
         let distanceTop = 900
         if(ypos > distanceTop){
-            $('.project1-left').animate({opacity: '1.0'}, 2000); 
+            $('.project1-left').animate({opacity: '1.0'}, 1000); 
         } 
     }
 
