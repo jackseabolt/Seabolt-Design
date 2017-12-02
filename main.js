@@ -60,7 +60,7 @@
     function textFadeIn(){
         ypos = window.pageYOffset;
         console.log(ypos)
-        let distanceTop = 900
+        let distanceTop = 800
         if(ypos > distanceTop){
             $('.project1-left').animate({opacity: '1.0'}, 1000); 
         } 
