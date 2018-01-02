@@ -139,6 +139,60 @@
         });  
     }
 
+    // FOCUS SECTION
+
+    function topPortfolio() {
+        $('html, body').animate({ scrollTop: $("#portfolio").offset(-50).top}, 'slow');
+    }
+
+    function focusAlbumreview() {
+        $('#portfolio-all').hide(100);
+        dropPortfolio(); 
+        $('#portfolio-albumreview-focus').css('display', 'flex');
+    }
+
+    function focusBuzzkill() {
+        $('#portfolio-all').hide(100);
+        dropPortfolio(); 
+        $('#portfolio-buzzkill-focus').css('display', 'flex');
+    }
+
+    function focusMusi() {
+        $('#portfolio-all').hide(100);
+        dropPortfolio(); 
+        $('#portfolio-musi-focus').css('display', 'flex');
+    }
+
+    function focusStormchaser() {
+        $('#portfolio-all').hide(100);
+        dropPortfolio(); 
+        $('#portfolio-stormchaser-focus').css('display', 'flex');
+    }
+
+    function focusSolarsystemguide() {
+        $('#portfolio-all').hide(100);
+        dropPortfolio(); 
+        $('#portfolio-solarsystemguide-focus').css('display', 'flex');
+    }
+
+    function focusGhostbusters() {
+        $('#portfolio-all').hide(100);
+        dropPortfolio(); 
+        $('#portfolio-ghostbusters-focus').css('display', 'flex');
+    }
+
+    function toggleMain() {
+        dropPortfolio(); 
+        $('#portfolio-buzzkill-focus').css('display', 'none');
+        $('#portfolio-albumreview-focus').css('display', 'none');
+        $('#portfolio-musi-focus').css('display', 'none');
+        $('#portfolio-stormchaser-focus').css('display', 'none');
+        $('#portfolio-solarsystemguide-focus').css('display', 'none');
+        $('#portfolio-ghostbusters-focus').css('display', 'none');
+        $('#portfolio-all').show(100);
+    }
+    
+
 
     function main() {
         $('#banner').animate({opacity: 1}, 2000);
@@ -146,6 +200,13 @@
         window.addEventListener('scroll', parallax); 
         window.addEventListener('scroll', textFadeIn); 
         window.addEventListener('scroll', helloFadeIn); 
+        $('#portfolio-buzzkill').on('click', focusBuzzkill); 
+        $('#portfolio-albumreview').on('click', focusAlbumreview); 
+        $('#portfolio-musi').on('click', focusMusi); 
+        $('#portfolio-solarsystemguide').on('click', focusSolarsystemguide); 
+        $('#portfolio-stormchaser').on('click', focusStormchaser); 
+        $('#portfolio-ghostbusters').on('click', focusGhostbusters); 
+        $('.button-focus').on('click', toggleMain)
        
         handleForm(); 
         $('body').on('click', function(event) {
