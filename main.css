@@ -675,9 +675,8 @@ footer {
         justify-content: space-between; 
     }
     #title {
-        font-size: 70px; 
-        margin-left: 70px; 
-        margin-right: 70px; 
+        font-size: 60px; 
+        margin: 0px 30px; 
         top: -630px;
         line-height: 120%;  
     }
