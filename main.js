@@ -49,7 +49,9 @@
         hideMobileNav(); 
     }
 
-    function parallax(){
+    // PARALLAX SCROLLING 
+
+    function parallax() {
         div = document.getElementById('banner');  
         ypos = window.pageYOffset; 
         div.style.top = ypos * 0.5 + 'px'; 
@@ -57,7 +59,7 @@
 
     // MAKES HELLO TEXT APPEAR
 
-    function helloFadeIn(){
+    function helloFadeIn() {
         ypos = window.pageYOffset;
         console.log(ypos)
         let distanceTop = 300
@@ -68,7 +70,7 @@
 
     // MAKES MOBILE FIRST TEXT APPEAR 
 
-    function textFadeIn(){
+    function textFadeIn() {
         ypos = window.pageYOffset;
         console.log(ypos)
         let distanceTop = 800
@@ -142,43 +144,43 @@
     // FOCUS SECTION
 
     function topPortfolio() {
-        $('html, body').animate({ scrollTop: $("#portfolio").offset(-50).top}, 'slow');
+        $('html, body').animate({ scrollTop: $("#portfolio").offset().top -35}, 'slow');
     }
 
     function focusAlbumreview() {
         $('#portfolio-all').hide(100);
         dropPortfolio(); 
-        $('#portfolio-albumreview-focus').css('display', 'flex');
+        $('#portfolio-albumreview-focus').css('display', 'block');
     }
 
     function focusBuzzkill() {
         $('#portfolio-all').hide(100);
         dropPortfolio(); 
-        $('#portfolio-buzzkill-focus').css('display', 'flex');
+        $('#portfolio-buzzkill-focus').css('display', 'block');
     }
 
     function focusMusi() {
         $('#portfolio-all').hide(100);
         dropPortfolio(); 
-        $('#portfolio-musi-focus').css('display', 'flex');
+        $('#portfolio-musi-focus').css('display', 'block');
     }
 
     function focusStormchaser() {
         $('#portfolio-all').hide(100);
         dropPortfolio(); 
-        $('#portfolio-stormchaser-focus').css('display', 'flex');
+        $('#portfolio-stormchaser-focus').css('display', 'block');
     }
 
     function focusSolarsystemguide() {
         $('#portfolio-all').hide(100);
         dropPortfolio(); 
-        $('#portfolio-solarsystemguide-focus').css('display', 'flex');
+        $('#portfolio-solarsystemguide-focus').css('display', 'block');
     }
 
     function focusGhostbusters() {
         $('#portfolio-all').hide(100);
         dropPortfolio(); 
-        $('#portfolio-ghostbusters-focus').css('display', 'flex');
+        $('#portfolio-ghostbusters-focus').css('display', 'block');
     }
 
     function toggleMain() {
@@ -191,8 +193,6 @@
         $('#portfolio-ghostbusters-focus').css('display', 'none');
         $('#portfolio-all').show(100);
     }
-    
-
 
     function main() {
         $('#banner').animate({opacity: 1}, 2000);

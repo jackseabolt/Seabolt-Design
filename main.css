@@ -238,11 +238,18 @@ h1 {
 
 .p-focus {
     color: #9B9B9B; 
-    font-size: 22px; 
+    font-size: 20px; 
     line-height: 150%;
     font-family: 'Roboto Condensed', sans-serif; 
     margin-top: 0px;
     margin-bottom: 0px;  
+}
+
+.p-white-focus {
+    color: white; 
+    font-size: 20px; 
+    line-height: 150%; 
+    font-family: 'Roboto Condensed', sans-serif; 
 }
 
 .p-white {
@@ -342,7 +349,16 @@ footer {
     padding-bottom: 100px; 
     z-index: 5; 
     background-color: #2C3249; 
-    display: flex; 
+}
+
+#portfolio-focus {
+    width: 100%; 
+    margin: 0px auto;
+    padding-top: 100px;
+    padding-bottom: 100px; 
+    z-index: 5; 
+    background-color: #2C3249; 
+    display: none; 
 }
 
 #portfolio-buzzkill-focus {
@@ -367,6 +383,10 @@ footer {
 
 #portfolio-albumreview-focus {
     display: none; 
+}
+
+.portoflio-section:hover {
+    cursor: pointer; 
 }
 
 
@@ -396,6 +416,10 @@ footer {
 .container-noflex {
     width: 70%; 
     margin: 0px auto;
+}
+
+.container-focus {
+    padding: 50px 0px; 
 }
 
 .container-logos {
@@ -457,6 +481,14 @@ footer {
 
 #portfolio-ghostbusters {
     background: url('./images/ghostbusters.png') no-repeat center top; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+}
+
+#portfolio-ghostbusters-image {
+    background: url('./images/ghostbusters-focus.png') no-repeat center top; 
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
@@ -567,6 +599,14 @@ footer {
         margin: 20px auto;
         display: block;  
     }
+    .focus {
+        padding: 0px;
+        display: block; 
+        width: 100%; 
+    }
+    .focus-right {
+        padding-top: 30px; 
+    }
     #title {
         font-size: 60px; 
     }
@@ -584,6 +624,9 @@ footer {
         margin-top: 50px;
         margin-left: auto; 
         margin-right: auto;  
+    }
+    #portoflio {
+        display: block !important; 
     }
     .portoflio-item-large {
         height: 400px; 
