@@ -675,9 +675,11 @@ footer {
         justify-content: space-between; 
     }
     #title {
-        font-size: 50px; 
-        margin-left: 20px; 
-        margin-right: 20px; 
+        font-size: 70px; 
+        margin-left: 70px; 
+        margin-right: 70px; 
+        top: -630px;
+        line-height: 120%;  
     }
     .portoflio-item-large {
         height: 250px;  
@@ -696,9 +698,6 @@ footer {
     }
     .center {
         text-align: center; 
-    }
-    #title {
-        top: -630px; 
     }
     #banner {
         background-image: url('./images/background-mobile.jpg'); 
