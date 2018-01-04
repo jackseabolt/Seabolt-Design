@@ -69,15 +69,31 @@ a:hover {
 #banner {
 	background-image: url('./images/background.jpeg');
     -webkit-background-size: cover;
-    height: 120%;  
+    height: 100%;  
 	margin-top: none;
     padding-top: none;
+    /* position:relative;  */
     position:relative; 
     z-index: -5; 
     top: 0; 
     text-align: center; 
     opacity: 0; 
 }
+
+#banner-container {
+    position: relative;
+    height: 120%; 
+}
+
+
+
+
+
+
+
+
+
+
 
 /* title section - nav styles */
 
