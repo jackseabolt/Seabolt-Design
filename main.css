@@ -1,3 +1,38 @@
+.container-parallax {
+    height: 100%;
+    -webkit-perspective: 100px;
+    perspective: 100px;
+    -webkit-perspective-origin: 0 0;
+    perspective-origin: 0 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+#banner-container {
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d; /* firefox requires this for children */
+    z-index: -1;
+    height: 120%;
+}
+
+#banner {
+	background-image: url('./images/background.jpeg');
+    -webkit-background-size: cover;
+    height: 120%;  
+	margin-top: none;
+    padding-top: none;
+    -webkit-transform: translateZ(-50px) scale(2);
+    transform: translateZ(-50px) scale(2);
+    /* -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d; 
+    z-index: -5 !important;  */
+    /* fixes z-index, but creates flashes */
+    /* position: relative;  */
+    text-align: center; 
+    opacity: 0; 
+}
+
 body {
     background-color: black; 
     margin: 0px; 
@@ -66,18 +101,6 @@ a:hover {
 
 /* title section - banner styles */
 
-#banner {
-	background-image: url('./images/background.jpeg');
-    -webkit-background-size: cover;
-    height: 120%;  
-	margin-top: none;
-    padding-top: none;
-    position:relative; 
-    z-index: -5; 
-    top: 0; 
-    text-align: center; 
-    opacity: 0; 
-}
 
 /* title section - nav styles */
 
@@ -93,7 +116,7 @@ a:hover {
 }
 
 #nav {
-    position: fixed; 
+    position: absolute; 
     top: 0px; 
     display: flex; 
     justify-content: space-around;
@@ -132,9 +155,6 @@ a:hover {
 .nav-link:hover {
     color: rgb(219, 219, 219); 
 }
-
-
-
 
 .input {
     width:  calc(100% - 24px);  /* width: calc(100%/3 - 20px);   */

@@ -1,5 +1,5 @@
 
-    let navIsOpen = false; 
+    let navIsOpen = false;
 
     function hideMobileNav() {
         navIsOpen = false; 
@@ -14,54 +14,54 @@
     }
 
     function dropMobile() {
-        $('html, body').animate({ scrollTop: $("#mobile-first").offset().top}, 'slow');
+        $('html, body, .container-parallax').animate({ scrollTop: $("#mobile-first").offset().top}, 'slow');
     }
 
     function dropMobileMobile() {
-        $('html, body').animate({ scrollTop: $("#mobile-first").offset().top}, 'slow');
+        $('html, body, .container-parallax').animate({ scrollTop: $("#mobile-first").offset().top}, 'slow');
         hideMobileNav();  
     }
 
     function dropPortfolio() {
-        $('html, body').animate({ scrollTop: $("#portfolio").offset().top}, 'slow');
+        $('html, body, .container-parallax').animate({ scrollTop: $("#portfolio").offset().top}, 'slow');
     }
 
     function dropPortfolioMobile() {
-        $('html, body').animate({ scrollTop: $("#portfolio").offset().top}, 'slow');
+        $('html, body, .container-parallax').animate({ scrollTop: $("#portfolio").offset().top}, 'slow');
         hideMobileNav(); 
     }
 
     function dropAbout() { 
-        $('html, body').animate({ scrollTop: $("#about-me").offset().top}, 'slow');
+        $('html, body, .container-parallax').animate({ scrollTop: $("#about-me").offset().top}, 'slow');
     }
 
     function dropAboutMobile() { 
-        $('html, body').animate({ scrollTop: $("#about-me").offset().top}, 'slow');
+        $('html, body, .container-parallax').animate({ scrollTop: $("#about-me").offset().top}, 'slow');
         hideMobileNav(); 
     }
 
     function dropContact() {
-        $('html, body').animate({ scrollTop: $("#contact").offset().top}, 'slow');
+        $('html, body, .container-parallax').animate({ scrollTop: $("#contact").offset().top}, 'slow');
     }
 
     function dropContactMobile() {
-        $('html, body').animate({ scrollTop: $("#contact").offset().top}, 'slow');
+        $('html, body, .container-parallax').animate({ scrollTop: $("#contact").offset().top}, 'slow');
         hideMobileNav(); 
     }
 
     // PARALLAX SCROLLING 
 
-    function parallax() {
-        div = document.getElementById('banner');  
-        ypos = window.pageYOffset; 
-        div.style.top = ypos * 0.5 + 'px'; 
-    }
+    // function parallax() {
+    //     div = document.getElementById('banner');  
+    //     ypos = window.pageYOffset; 
+    //     div.style.top = ypos * 0.5 + 'px'; 
+    // }
 
     // MAKES HELLO TEXT APPEAR
 
     function helloFadeIn() {
-        ypos = window.pageYOffset;
-        console.log(ypos)
+        ypos = $('.container-parallax').offset().top;
+        console.log("Here", ypos)
         let distanceTop = 300
         if(ypos > distanceTop){
             $('.intro-right').animate({opacity: '1.0'}, 1000); 
@@ -197,7 +197,7 @@
     function main() {
         $('#banner').animate({opacity: 1}, 2000);
         window.addEventListener('scroll', colorChange); 
-        window.addEventListener('scroll', parallax); 
+        // window.addEventListener('scroll', parallax); 
         window.addEventListener('scroll', textFadeIn); 
         window.addEventListener('scroll', helloFadeIn); 
         $('#portfolio-buzzkill').on('click', focusBuzzkill); 
