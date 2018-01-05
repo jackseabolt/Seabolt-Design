@@ -385,7 +385,7 @@ footer {
     display: none; 
 }
 
-#portfolio-solarsystemguide-focus {
+#portfolio-potusfacts-focus {
     display: none; 
 }
 
@@ -511,8 +511,8 @@ footer {
     background-size: cover;
 }
 
-#portfolio-solarsystemguide {
-    background: url('./images/solar-system-guide.png') no-repeat center top; 
+#portfolio-potusfacts {
+    background: url('./images/potusfacts.jpg') no-repeat center top; 
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
