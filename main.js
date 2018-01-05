@@ -49,14 +49,6 @@ function dropContactMobile() {
     hideMobileNav();
 }
 
-// PARALLAX SCROLLING 
-
-// function parallax() {
-//     div = document.getElementById('banner');  
-//     ypos = window.pageYOffset; 
-//     div.style.top = ypos * 0.5 + 'px'; 
-// }
-
 // MAKES HELLO TEXT APPEAR
 
 function helloFadeIn() {
@@ -197,7 +189,6 @@ function toggleMain() {
 function main() {
     $('#banner').animate({ opacity: 1 }, 2000);
     window.addEventListener('scroll', colorChange);
-    // window.addEventListener('scroll', parallax); 
     window.addEventListener('scroll', textFadeIn);
     window.addEventListener('scroll', helloFadeIn);
     $('#portfolio-buzzkill').on('click', focusBuzzkill);
