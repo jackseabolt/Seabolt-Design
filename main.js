@@ -74,8 +74,8 @@ function textFadeIn() {
 function colorChange() {
     let ypos = window.pageYOffset;
     let distanceTop = $('#mobile-first').offset().top - 90;
-    let distanceBottom = distanceTop + 712;
-    let mobileDistanceBottom = distanceTop + 1240;
+    let distanceBottom = $('#portfolio').offset().top - 90;
+    let mobileDistanceBottom = $('#portfolio').offset().top - 50;
     if (ypos > distanceTop && ypos < distanceBottom) {
         $('.nav-link').css('color', 'black')
     }
