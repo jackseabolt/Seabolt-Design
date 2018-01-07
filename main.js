@@ -53,7 +53,6 @@ function dropContactMobile() {
 
 function helloFadeIn() {
     ypos = window.pageYOffset;
-    console.log(ypos)
     let distanceTop = 300
     if (ypos > distanceTop) {
         $('.intro-right').animate({ opacity: '1.0' }, 1000);
@@ -64,7 +63,6 @@ function helloFadeIn() {
 
 function textFadeIn() {
     ypos = window.pageYOffset;
-    console.log(ypos)
     let distanceTop = 800
     if (ypos > distanceTop) {
         $('.project1-left').animate({ opacity: '1.0' }, 1000);
@@ -198,11 +196,12 @@ function main() {
     $('#portfolio-potusfacts').on('click', focusPotusfacts);
     $('#portfolio-stormchaser').on('click', focusStormchaser);
     $('#portfolio-ghostbusters').on('click', focusGhostbusters);
-    $('.button-focus').on('click', toggleMain)
+    $('.button-focus').on('click', toggleMain); 
+    $('#hamburger').on('click', showMobileNav); 
 
     handleForm();
     $('body').on('click', function (event) {
-        if (navIsOpen && event.target.id !== 'hamburger') {
+        if (navIsOpen && event.target.id !== 'hamburger' && event.target.id !== 'ham1' && event.target.id !== 'ham2' && event.target.id !== 'ham3') {
             hideMobileNav();
         }
     });
