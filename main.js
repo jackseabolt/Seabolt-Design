@@ -94,15 +94,13 @@ function navChange() {
     let distanceTop = $('#hello-section').offset().top - 90;
     if (ypos > distanceTop) {
         $('#nav').css('backgroundColor', 'rgba(0, 0, 0, 0.5)')
-        $('#nav').css('paddingTop', '5px')
+        $('#nav').css('paddingTop', '0px')
     }
     else if (ypos < distanceTop) {
         $('#nav').css('backgroundColor', 'rgba(0, 0, 0, 0.0)')
         $('#nav').css('paddingTop', '30px')
     }
 }
-
-
 
 
 // FORM CODE
