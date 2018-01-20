@@ -101,13 +101,22 @@ a:hover {
 #nav {
     position: fixed; 
     top: 0px; 
-    display: flex; 
     justify-content: space-around;
-    width: 70%;
+    width: 100%;
     min-width: 600px; 
     left: 50%;
     transform: translateX(-50%);
-    padding-top: 30px; 
+    padding-top: 30px;
+    padding-bottom: 5px;  
+    background-color: rgba(0, 0, 0, 0.0);
+    transition: 0.5s;  
+}
+
+#nav-flex {
+    width: 70%; 
+    display: flex; 
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .nav-link {
@@ -691,6 +700,9 @@ footer {
         margin-bottom: 100px; 
     }
     .nav-link {
+        display: none; 
+    }
+    #nav {
         display: none; 
     }
     .hamburger-container {

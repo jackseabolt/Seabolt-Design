@@ -76,15 +76,6 @@ function colorChange() {
     let distanceTop = $('#mobile-first').offset().top - 90;
     let distanceBottom = $('#portfolio').offset().top - 90;
     let mobileDistanceBottom = $('#portfolio').offset().top - 50;
-    if (ypos > distanceTop && ypos < distanceBottom) {
-        $('.nav-link').css('color', 'black')
-    }
-    else if (ypos < distanceTop) {
-        $('.nav-link').css('color', 'white')
-    }
-    else if (ypos > distanceBottom) {
-        $('.nav-link').css('color', 'white')
-    }
 
     // FOR HAMBURGER
     if (ypos > distanceTop && ypos < mobileDistanceBottom) {
@@ -97,6 +88,21 @@ function colorChange() {
         $('.hamburger-stripe').css('backgroundColor', 'white')
     }
 }
+
+function navChange() {
+    let ypos = window.pageYOffset;
+    let distanceTop = $('#hello-section').offset().top - 90;
+    if (ypos > distanceTop) {
+        $('#nav').css('backgroundColor', 'rgba(0, 0, 0, 0.5)')
+        $('#nav').css('paddingTop', '5px')
+    }
+    else if (ypos < distanceTop) {
+        $('#nav').css('backgroundColor', 'rgba(0, 0, 0, 0.0)')
+        $('#nav').css('paddingTop', '30px')
+    }
+}
+
+
 
 
 // FORM CODE
@@ -188,6 +194,7 @@ function toggleMain() {
 function main() {
     $('#banner').animate({ opacity: 1 }, 2000);
     window.addEventListener('scroll', colorChange);
+    window.addEventListener('scroll', navChange);
     window.addEventListener('scroll', textFadeIn);
     window.addEventListener('scroll', helloFadeIn);
     $('#portfolio-buzzkill').on('click', focusBuzzkill);
