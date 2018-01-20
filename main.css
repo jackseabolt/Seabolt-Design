@@ -447,6 +447,23 @@ footer {
 
 /*******PORTFOLIO STYLES**********/
 
+.hover {
+    width: 110%; 
+    height: 110%; 
+    margin: 0px; 
+    background-color: black;  
+    z-index: 999; 
+    opacity: 0;
+    transition: 0.3s; 
+    position: relative; 
+    top: -5px; 
+    left: -5px;  
+}
+
+.hover:hover { 
+    opacity: 0.4; 
+}
+
 .container-portfolio {
     width: 100%; 
     margin: 20px auto;
@@ -459,6 +476,10 @@ footer {
 #portfolio-albumreview {
     background-image: url('./images/albumreview.png'); 
     -webkit-background-size: cover;
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+    background-size: cover;
+    overflow: hidden;  
 }
 
 #portfolio-buzzkill {
@@ -467,6 +488,7 @@ footer {
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
+    overflow: hidden; 
 }
 
 #portfolio-roommatefinder {
@@ -475,6 +497,7 @@ footer {
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
+    overflow: hidden; 
 }
 
 #portfolio-stormchaser {
@@ -483,6 +506,7 @@ footer {
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
+    overflow: hidden; 
 }
 
 #portfolio-ghostbusters {
@@ -491,6 +515,7 @@ footer {
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
+    overflow: hidden; 
 }
 
 #portfolio-ghostbusters-image {
@@ -499,6 +524,7 @@ footer {
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
+    overflow: hidden; 
 }
 
 #portfolio-potusfacts {
@@ -507,6 +533,7 @@ footer {
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
+    overflow: hidden; 
 }
 
 
