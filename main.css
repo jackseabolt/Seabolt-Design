@@ -109,7 +109,7 @@ a:hover {
     padding-top: 30px;
     padding-bottom: 5px;  
     background-color: rgba(0, 0, 0, 0.0);
-    transition: 0.5s;  
+    transition: 0.3s;  
 }
 
 #nav-flex {
@@ -117,6 +117,7 @@ a:hover {
     display: flex; 
     margin-left: auto; 
     margin-right: auto;
+    height: 70px; 
 }
 
 .nav-link {
@@ -129,6 +130,7 @@ a:hover {
     transition: .3s;
     cursor: pointer; 
     z-index: 100; 
+    position: relative; 
 }
 
 .nav-link-mobile {
@@ -700,7 +702,12 @@ footer {
         margin-bottom: 100px; 
     }
     .nav-link {
-        display: none; 
+        display: none;     
+        -webkit-margin-before: 0px !important;
+        -webkit-margin-after: 0px !important; 
+        margin: 0px !important; 
+        padding: 0px !important; 
+        line-height: 100%; 
     }
     #nav {
         display: none; 

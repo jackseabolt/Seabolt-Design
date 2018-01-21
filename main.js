@@ -93,12 +93,14 @@ function navChange() {
     let ypos = window.pageYOffset;
     let distanceTop = $('#hello-section').offset().top - 90;
     if (ypos > distanceTop) {
-        $('#nav').css('backgroundColor', 'rgba(0, 0, 0, 0.5)')
-        $('#nav').css('paddingTop', '0px')
+        $('#nav').css('backgroundColor', 'rgba(0, 0, 0, 0.5)'); 
+        $('#nav').css('paddingTop', '0px');
+        $('.nav-link').css('top', '-8px'); 
     }
     else if (ypos < distanceTop) {
-        $('#nav').css('backgroundColor', 'rgba(0, 0, 0, 0.0)')
-        $('#nav').css('paddingTop', '30px')
+        $('#nav').css('backgroundColor', 'rgba(0, 0, 0, 0.0)');
+        $('#nav').css('paddingTop', '30px');
+        $('.nav-link').css('top', '0px');
     }
 }
 
