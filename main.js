@@ -95,7 +95,7 @@ function navChange() {
     if (ypos > distanceTop) {
         $('#nav').css('backgroundColor', 'rgba(0, 0, 0, 0.5)'); 
         $('#nav').css('paddingTop', '0px');
-        $('.nav-link').css('top', '-8px'); 
+        $('.nav-link').css('top', '-7px'); 
     }
     else if (ypos < distanceTop) {
         $('#nav').css('backgroundColor', 'rgba(0, 0, 0, 0.0)');
