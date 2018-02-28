@@ -254,7 +254,7 @@ h1 {
 }
 
 .p-focus {
-    color: #9B9B9B; 
+    color: rgb(182, 182, 182); 
     font-size: 20px; 
     line-height: 150%;
     font-family: 'Roboto Condensed', sans-serif; 
@@ -386,7 +386,7 @@ footer {
     display: none; 
 }
 
-#portfolio-potusfacts-focus {
+#portfolio-starquiz-focus {
     display: none; 
 }
 
@@ -538,8 +538,8 @@ footer {
     overflow: hidden; 
 }
 
-#portfolio-potusfacts {
-    background: url('./images/potusfacts.jpg') no-repeat center top; 
+#portfolio-starquiz {
+    background: url('./images/starquiz.png') no-repeat center top; 
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 

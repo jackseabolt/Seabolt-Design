@@ -167,11 +167,11 @@ function focusStormchaser() {
     $('#portfolio-stormchaser-focus').css('display', 'block');
 }
 
-function focusPotusfacts() {
+function focusStarquiz() {
     console.log("IT FIRED")
     $('#portfolio-all').hide(100);
     dropPortfolio();
-    $('#portfolio-potusfacts-focus').css('display', 'block');
+    $('#portfolio-starquiz-focus').css('display', 'block');
 }
 
 function focusGhostbusters() {
@@ -186,7 +186,7 @@ function toggleMain() {
     $('#portfolio-albumreview-focus').css('display', 'none');
     $('#portfolio-roommatefinder-focus').css('display', 'none');
     $('#portfolio-stormchaser-focus').css('display', 'none');
-    $('#portfolio-potusfacts-focus').css('display', 'none');
+    $('#portfolio-starquiz-focus').css('display', 'none');
     $('#portfolio-ghostbusters-focus').css('display', 'none');
     $('#portfolio-all').show(100);
 }
@@ -200,7 +200,7 @@ function main() {
     $('#portfolio-buzzkill').on('click', focusBuzzkill);
     $('#portfolio-albumreview').on('click', focusAlbumreview);
     $('#portfolio-roommatefinder').on('click', focusRoommatefinder);
-    $('#portfolio-potusfacts').on('click', focusPotusfacts);
+    $('#portfolio-starquiz').on('click', focusStarquiz);
     $('#portfolio-stormchaser').on('click', focusStormchaser);
     $('#portfolio-ghostbusters').on('click', focusGhostbusters);
     $('.button-focus').on('click', toggleMain); 
