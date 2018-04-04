@@ -365,7 +365,7 @@ footer {
     padding-top: 100px;
     padding-bottom: 100px; 
     z-index: 5; 
-    background-color: #2C3249; 
+    background-color: rgb(39, 44, 63); 
 }
 
 #portfolio-focus {
