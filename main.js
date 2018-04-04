@@ -143,10 +143,10 @@ function topPortfolio() {
     $('html, body').animate({ scrollTop: $("#portfolio").offset().top - 35 }, 'slow');
 }
 
-function focusAlbumreview() {
+function focusTasktracker() {
     $('#portfolio-all').hide(100);
     dropPortfolio();
-    $('#portfolio-albumreview-focus').css('display', 'block');
+    $('#portfolio-tasktracker-focus').css('display', 'block');
 }
 
 function focusBuzzkill() {
@@ -183,7 +183,7 @@ function focusGhostbusters() {
 function toggleMain() {
     dropPortfolio();
     $('#portfolio-buzzkill-focus').css('display', 'none');
-    $('#portfolio-albumreview-focus').css('display', 'none');
+    $('#portfolio-tasktracker-focus').css('display', 'none');
     $('#portfolio-roommatefinder-focus').css('display', 'none');
     $('#portfolio-stormchaser-focus').css('display', 'none');
     $('#portfolio-starquiz-focus').css('display', 'none');
@@ -198,7 +198,7 @@ function main() {
     window.addEventListener('scroll', textFadeIn);
     window.addEventListener('scroll', helloFadeIn);
     $('#portfolio-buzzkill').on('click', focusBuzzkill);
-    $('#portfolio-albumreview').on('click', focusAlbumreview);
+    $('#portfolio-tasktracker').on('click', focusTasktracker);
     $('#portfolio-roommatefinder').on('click', focusRoommatefinder);
     $('#portfolio-starquiz').on('click', focusStarquiz);
     $('#portfolio-stormchaser').on('click', focusStormchaser);

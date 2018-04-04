@@ -398,7 +398,7 @@ footer {
     display: none; 
 }
 
-#portfolio-albumreview-focus {
+#portfolio-tasktracker-focus {
     display: none; 
 }
 
@@ -425,6 +425,12 @@ footer {
 /*******CONTAINER STYLES**********/
 
 .container {
+    width: 70%; 
+    margin: 0px auto;
+    display: flex;  
+}
+
+.container-flex {
     width: 70%; 
     margin: 0px auto;
     display: flex;  
@@ -484,13 +490,13 @@ footer {
 
 /* portfolio - individualized information */
 
-#portfolio-albumreview {
-    background-image: url('./images/albumreview.png'); 
-    -webkit-background-size: cover;
+#portfolio-tasktracker {
+    background: url('./images/tasktracker.png') no-repeat center; 
+    -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
     background-size: cover;
-    overflow: hidden;  
+    overflow: hidden; 
 }
 
 #portfolio-buzzkill {
@@ -569,7 +575,7 @@ footer {
 }
 
 .portfolio-focus {
-    height: 400px; 
+    height: 380px; 
     width: 100%; 
     background-color: grey; 
 }
@@ -624,7 +630,38 @@ footer {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .portfolio-focus {
+        height: 250px; 
+        width: 100%; 
+        background-color: grey; 
+    }
+    .focus {
+        padding: 0px;
+        display: block; 
+        width: 100%;
+        margin-right: 40px;  
+    }
+    .focus-right {
+        padding-top: 30px; 
+    }
+    .container-flex {
+        width: 80%; 
+        display: block; 
+    }
+    .portfolio-focus {
+        height: 420px; 
+        width: 100%; 
+        background-color: grey; 
+    }
+}
+
 @media screen and (max-width: 800px) {
+    .portfolio-focus {
+        height: 380px; 
+        width: 100%; 
+        background-color: grey; 
+    }
     .intro-right {
         padding-left: 0px; 
     }
@@ -642,14 +679,6 @@ footer {
         width: 100%; 
         margin: 20px auto;
         display: block;  
-    }
-    .focus {
-        padding: 0px;
-        display: block; 
-        width: 100%; 
-    }
-    .focus-right {
-        padding-top: 30px; 
     }
     #title {
         font-size: 60px; 
@@ -752,5 +781,13 @@ footer {
     }
     #banner {
         background-image: url('./images/background-mobile.jpg'); 
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .portfolio-focus {
+        height: 250px; 
+        width: 100%; 
+        background-color: grey; 
     }
 }
