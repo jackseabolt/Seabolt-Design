@@ -382,7 +382,7 @@ footer {
     display: none; 
 }
 
-#portfolio-roommatefinder-focus {
+#portfolio-trasher-focus {
     display: none; 
 }
 
@@ -508,8 +508,8 @@ footer {
     overflow: hidden; 
 }
 
-#portfolio-roommatefinder {
-    background: url('./images/roommatefinder.jpg') no-repeat center; 
+#portfolio-trasher {
+    background: url('./images/trasher.png') no-repeat center; 
     -webkit-background-size: cover; 
     -moz-background-size: cover; 
     -o-background-size: cover; 
