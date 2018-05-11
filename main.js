@@ -155,10 +155,10 @@ function focusBuzzkill() {
     $('#portfolio-buzzkill-focus').css('display', 'block');
 }
 
-function focusRoommatefinder() {
+function focusTrasher() {
     $('#portfolio-all').hide(100);
     dropPortfolio();
-    $('#portfolio-roommatefinder-focus').css('display', 'block');
+    $('#portfolio-trasher-focus').css('display', 'block');
 }
 
 function focusStormchaser() {
@@ -184,7 +184,7 @@ function toggleMain() {
     dropPortfolio();
     $('#portfolio-buzzkill-focus').css('display', 'none');
     $('#portfolio-tasktracker-focus').css('display', 'none');
-    $('#portfolio-roommatefinder-focus').css('display', 'none');
+    $('#portfolio-trasher-focus').css('display', 'none');
     $('#portfolio-stormchaser-focus').css('display', 'none');
     $('#portfolio-starquiz-focus').css('display', 'none');
     $('#portfolio-ghostbusters-focus').css('display', 'none');
@@ -199,7 +199,7 @@ function main() {
     window.addEventListener('scroll', helloFadeIn);
     $('#portfolio-buzzkill').on('click', focusBuzzkill);
     $('#portfolio-tasktracker').on('click', focusTasktracker);
-    $('#portfolio-roommatefinder').on('click', focusRoommatefinder);
+    $('#portfolio-trasher').on('click', focusTrasher);
     $('#portfolio-starquiz').on('click', focusStarquiz);
     $('#portfolio-stormchaser').on('click', focusStormchaser);
     $('#portfolio-ghostbusters').on('click', focusGhostbusters);
