@@ -791,3 +791,33 @@ footer {
         background-color: grey; 
     }
 }
+
+@media screen and (min-width: 1300px) {
+    .portoflio-item-large {
+        height: 350px;  
+    }
+    .portoflio-item-large-nospace {
+        height: 350px; 
+    }
+    .portfolio-item {
+        height: 350px;  
+    }
+    .portfolio-item-spacing {
+        height: 350px;  
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .portoflio-item-large {
+        height: 380px;  
+    }
+    .portoflio-item-large-nospace {
+        height: 380px; 
+    }
+    .portfolio-item {
+        height: 380px;  
+    }
+    .portfolio-item-spacing {
+        height: 380px;  
+    }
+}
